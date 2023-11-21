@@ -68,6 +68,7 @@ body {
   /* Add styling for the contact form */
 }
 
+
 .projects-container {
   max-width: 800px;
   margin: 20px auto;
@@ -120,4 +121,10 @@ body {
 
 .repo-link {
   background-color: #0366d6;
-}s
+}
+
+@media (max-width: 767px) {
+  .project {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
