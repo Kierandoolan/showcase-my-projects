@@ -16,20 +16,47 @@ body {
     border: 3px solid rgb(111, 160, 205);
 }
 
-.about-me-paragraph {
-    text-align: left;
 
+.about-me-content {
+  float: left;
+  width: 60%;
 }
 
+.about-me-paragraph {
+  list-style: none;
+  padding: 0;
+}
 
-  .skills, .contact {
-    padding: 50px 0;
-  }
-  
-  .skills i {
-    font-size: 3em;
-    color: #007bff;
-  }
+.about-me-paragraph li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.skills-container {
+  padding-left:50px;
+  float: right;
+  width: 40%;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.font {
+  padding-left:2px;
+}
+
+.icon {
+  margin-right: 10px;
+}
   
   .contact form {
     /* Add styling for the contact form */
