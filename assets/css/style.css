@@ -1,7 +1,7 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color:rgb(21, 16, 25);
-    color:white;
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(21, 16, 25);
+  color: white;
 }
 
 .header {
@@ -9,17 +9,23 @@ body {
 }
 
 .type-color {
-  color:yellow;
-}
-.profile-pic {
-    border-radius: 50%;
-    border: 3px solid rgb(111, 160, 205);
+  color: yellow;
 }
 
+.profile-pic {
+  border-radius: 50%;
+  border: 3px solid rgb(111, 160, 205);
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .about-me-content {
-  float: left;
-  width: 60%;
+  flex-basis: calc(60% - 20px); /* Adjusted to leave some space between about me and skills */
+  max-width: calc(60% - 20px);
 }
 
 .about-me-paragraph {
@@ -33,9 +39,9 @@ body {
 }
 
 .skills-container {
-  padding-left:50px;
-  float: right;
-  width: 40%;
+  flex-basis: calc(40% - 20px); /* Adjusted to leave some space between about me and skills */
+  max-width: calc(40% - 20px);
+  padding-left: 20px; /* Adjusted padding to provide space between skills and about me */
 }
 
 .skills-list {
@@ -51,14 +57,67 @@ body {
 }
 
 .font {
-  padding-left:2px;
+  padding-left: 2px;
 }
 
 .icon {
   margin-right: 10px;
 }
-  
-  .contact form {
-    /* Add styling for the contact form */
-  }
-  
+
+.contact form {
+  /* Add styling for the contact form */
+}
+
+.projects-container {
+  max-width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: calc(33.33% - 20px);
+  margin-bottom: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.project-links a {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.live-link {
+  background-color: #4caf50;
+}
+
+.repo-link {
+  background-color: #0366d6;
+}s
