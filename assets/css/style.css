@@ -1,8 +1,37 @@
 body {
-    background-color:black;
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(21, 16, 25);
     color:white;
 }
 
+.header {
+  background: url("/assets/media/1567666.png") center/cover no-repeat;
+}
+
+.type-color {
+  color:yellow;
+}
 .profile-pic {
     border-radius: 50%;
+    border: 3px solid rgb(111, 160, 205);
 }
+
+.about-me-paragraph {
+    text-align: left;
+
+}
+
+
+  .skills, .contact {
+    padding: 50px 0;
+  }
+  
+  .skills i {
+    font-size: 3em;
+    color: #007bff;
+  }
+  
+  .contact form {
+    /* Add styling for the contact form */
+  }
+  
