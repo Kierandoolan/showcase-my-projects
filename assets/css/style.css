@@ -123,6 +123,16 @@ body {
   background-color: #0366d6;
 }
 
+.whatsapp-icon {
+  height:50px;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+
 @media (max-width: 767px) {
   .project {
     width: 100%; /* Full width for smaller screens */
