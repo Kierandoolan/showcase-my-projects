@@ -1,12 +1,11 @@
-
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
+    $email = $_POST["emailaddress"];
+    $message = $_POST["projectsummary"];
 
-    $to = "Kierandoolan3@gmail.com";
-    $subject = "New CV Contact Form Submission";
+    $to = "kierandoolan3@gmail.com"; // Replace with your email address
+    $subject = "New Project Request";
     $headers = "From: $email";
 
     mail($to, $subject, $message, $headers);
@@ -16,4 +15,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit;
 }
 ?>
-

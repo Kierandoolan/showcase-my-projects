@@ -164,19 +164,32 @@
         </a>
         
      </section>
-
-     <form action="process_form.php" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <input type="submit" value="Submit">
-  </form>
+     <section class="container form-border">
+      <div class="row bg-color-contact">
+          <div>
+              <h3 class="contact-heading uppercase text-center">Have a project or a job opportunity?</h3>
+              <h5 class="uppercase contact-heading text-center">Let's work together</h5>
+          </div>
+          <div class="center-form">
+            <form action="https://formspree.io/f/xoqooged" method="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+  
+              <label for="number">Number:</label>
+              <input type="tel" id="number" name="number" pattern="[0-9]{10}" placeholder="e.g., 1234567890" required>
+  
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+  
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+  
+              <button type="submit">Submit</button>
+              </form>
+          </div>
+      </div>
+  </section>
+     
 
     
     <script src="assets/js/script.js"></script>
