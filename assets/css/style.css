@@ -65,7 +65,7 @@ body {
 }
 
 .contact form {
-  /* Add styling for the contact form */
+
 }
 
 
@@ -124,6 +124,9 @@ body {
 
 }
 
+.coming-soon {
+  height:300px;
+}
 .repo-link {
   background-color: #0366d6;
 }
